@@ -6,66 +6,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .topnav input[type=text] {
+            float: initial;
+            padding: 20px;
+            margin-top: 5px;
+            margin-right: 50px;
+            border: none;
+            font-size: 17px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .intro {
+            text-align: justify;
+            width: 80%;
+            padding-top: 18%;
+            font-size: larger;
+        }
+    </style>
+    <style>
+        .collectinfo {
+            text-align: justify;
+            width: 80%;
+            padding-top: 18%;
+            font-size: larger;
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 250px;
+        }
+    </style>
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            margin-left: 9%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+    <style>
+        .conta {
+            text-align: center;
+            width: 100%;
+            padding-top: 0%;
+            font-size: larger;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <img src="https://i.ibb.co/1KSkw13/frame-00-delay-0-05s.jpg" alt="To-do logo">
-        <nav>
-            <input type="text" placeholder="Search Tasks">
-            <button type="button">Today Tasks</button>
+        <img src="https://i.ibb.co/1KSkw13/frame-00-delay-0-05s.jpg" alt="To-do logo" style="width:10%;">
 
-            <li><a href="http://127.0.0.1:5500/index.html">Home page</a></li>
-            <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
-            <li><a href="#">Add new Task</a></li>
-            <li><a href="#">Edit Task</a></li>
-            <li><a href="#">Task Summary</a></li>
-        </nav>
+
+        
+
+        <body>
+            <div class="topnav">
+                <input type="text" placeholder="Search Tasks">
+                <a href="http://127.0.0.1:5500/index.html">Home page</a></li>
+                <a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <a href="#">Add new Task</a></li>
+                <a href="#">Edit Task</a></li>
+                <a href="#">Task Summary</a></li>
+            </div>
+
+        </body>
+
+
 
     </header>
     <main>
-        <nav>
-
-            <section>
-                <div class="centered">Task Management Make the hard easy</div>
-                <img src="https://www.educationalappstore.com/blog/wp-content/uploads/2018/08/best-to-do-list-apps-for-task-management-750x350.jpg"
-                    alt="Welcome statement" style="width:60%;">
-                <section>
-
-                    <h1>Sorting Tasks </h1>
+        <div class="row">
+            <div class="column">
+                <img src="https://images.bitmoji.com/3d/avatar/201714142-99682453753_1-s5-v1.webp" alt="mypic"
+                    style="width:100%">
+            </div>
+            <div class="Myintro">
+                <div class="intro">
+                    <h1>Mohammad Ghanem </h1>
                     <p>
-                        Sorting tasks are a creative and interactive way to communicate with people and help them
-                        explore
-                        and express their feelings or preferences.
+                        Hello all my name is Mohammad Ghanem I am a Mechanical Engineer graduated at first month of 2020
+                        and I am very intrested in programming and its my childhood dream I thank you very much for
+                        doing
+                        such courses and I wish you further progress and success all the best wishes for success.
                     </p>
-                    <h3>
-                        Name
-                    </h3>
-                    <input type="text" placeholder="Mohammad ghanem">
-                    <h3>Email</h3>
-                    <input type="text" placeholder="example@example.com">
-                    <h3>Phone Number</h3>
-                    <input type="text" placeholder="00962780000000"><br><br>
-                    <button type="button">Submit</button>
-                </section>
-        </nav>
+                </div>
+
+                <div class="container">
+
+                    <form action="/action_page.php">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="lastname" placeholder="example@example.com">
+                        <label for="lname">Phone</label>
+                        <input type="text" id="lname" name="lastname" placeholder="00962..">
+
+
+                        <label for="subject">Messeage</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+
+
+            </div>
+
 
 
 
     </main>
     <footer>
-        <h1>Contact us </h1>
-        <h2>Phone </h2>
-        <h2>Social media </h2>
+        <div class="conta">
+            <h1>Contact us </h1>
+            <h2>Phone </h2>
+            <h2>+9626548457 </h2>
+            <h2>Social media </h2>
+            
+            
+        </div>
+
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-google"></a>
         <a href="#" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-youtube"></a>
         <a href="#" class="fa fa-instagram"></a>
-        <h2>+9626548457 </h2>
-        <h3>Copyright &copy;2022 To do, Inc. All rights reserved.</h3>
+        <div class="conta">
+            <h3>Copyright &copy;2022 To do, Inc. All rights reserved.</h3>
+
+        </div>
     </footer>
 </body>
 
