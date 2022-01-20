@@ -15,8 +15,8 @@
         alert("Plese enter your Age correctly");
 
     }
-    var hisHerAcceptToWelcoming = prompt("If you want to skip Welcoming enter skip otherwise press enter").toLowerCase();
-    if (hisHerAcceptToWelcoming != "skip")
+    var hisHerAcceptToWelcoming = confirm("Are you want to show Welcoming Message");
+    if (hisHerAcceptToWelcoming == true)
     {
     switch (hisHerGender) {
         case "male":
