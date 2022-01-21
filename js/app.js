@@ -1,23 +1,26 @@
 
 
 
+var maxCount
+var hisHerName = prompt("Please Enter your name");
 
-    var hisHerName = prompt("Please Enter your name");
-
-    var hisHerGender = prompt("Please Enter your Gender").toLowerCase();
-
-    if (hisHerGender != "male" && hisHerGender != "female") {
+while (true) {
+    var hisHerGender = prompt("Please Enter your Gender(male/female)").toLowerCase();
+    if (hisHerGender == "male" || hisHerGender == "female") break;
+    else {
         alert("Plese enter your Gender Correctly");
     }
-    var hisHerAge = prompt("Please enter your Age");
+}
 
-    if (hisHerAge <= 0) {
-        alert("Plese enter your Age correctly");
+var hisHerAge = prompt("Please enter your Age");
 
-    }
-    var hisHerAcceptToWelcoming = confirm("Are you want to show Welcoming Message");
-    if (hisHerAcceptToWelcoming == true)
-    {
+if (hisHerAge <= 0) {
+    alert("Plese enter your Age correctly");
+
+}
+
+var hisHerAcceptToWelcoming = confirm("Are you want to show Welcoming Message");
+if (hisHerAcceptToWelcoming == true) {
     switch (hisHerGender) {
         case "male":
             alert("Welcome Mr " + hisHerName);
