@@ -71,6 +71,7 @@
             for (var i=0 ;i<=2;i++){
 
                 var answer = prompt(questions[i]);
+                answer = answer.toLowerCase();
                  
                 answer.toLowerCase();
                 if (answer == "yes" || answer =="no")
