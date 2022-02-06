@@ -1,5 +1,7 @@
 # todo-project
 
+index wireframe
+![My wireframe To-do](todoWF.png)
 
-
-![My wireframe To-do](https://i.ibb.co/qMKThH3/todowireframecor.jpg)
+About wire frame
+![My wireframe To-do](todoWF2.png)
